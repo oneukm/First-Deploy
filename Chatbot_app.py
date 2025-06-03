@@ -52,7 +52,3 @@ You are an AI assistant. Answer the question based on the given dataset.
     with st.spinner("Thinking..."):
         response = model.generate_content(prompt)
         st.markdown(f"**Bot:** {response.text.strip()}")
-
-
-!streamlit run chatbot_app.py
-
