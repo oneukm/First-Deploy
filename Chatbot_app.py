@@ -35,6 +35,14 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # Streamlit UI
 st.title("Tabular Data Chatbot")
 st.write("Ask a question based on the dataset.")
+st.markdown(Hello! I'm your data assistant. Ask me anything about the dataset below.")
+
+st.markdown("""
+*Example questions you can ask:*
+- Which brand is most frequently consumed?
+- How often do people eat Slim Jim?
+- Compare Old Trapper and Jack Link’s.
+""")
  
 user_input = st.text_input("Your Question", "")
  
